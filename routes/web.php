@@ -4,12 +4,9 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\interview;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('sansyu-original');
-});
 
 Route::get("/interview{id}",[\App\Http\Controllers\interview::class,"show_interview"])->name("interview");
-Route::get("/",[\App\Http\Controllers\interview::class,"back_home"])->name("back_home");
+Route::get("/",[\App\Http\Controllers\interview::class,"show_home"])->name("show_home");
 
 
 

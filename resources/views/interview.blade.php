@@ -24,6 +24,6 @@
                     <iframe class="w-full h-modalYoutube" src="{{$selected_emp["youtube"]}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
         </div>
-        <p  class="ml-auto text-xl px-4">→ <a href="{{route("back_home")}}" class="hover:underline">戻る</a></p>
+        <p  class="ml-auto text-xl px-4">→ <a href="{{route("show_home")}}" class="hover:underline">戻る</a></p>
     </div>
 </x-layout>

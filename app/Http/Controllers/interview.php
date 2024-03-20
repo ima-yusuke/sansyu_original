@@ -92,8 +92,28 @@ class interview extends Controller
         return view("interview",compact("selected_emp"));
     }
 
-    public function back_home()
+    public function show_home()
     {
-        return view("sansyu-original");
+        $interviews =[
+            ["id"=>1,"path"=>"employee01.png","dpt"=>"型枠事業部","name"=>"鈴木 和弘","sec"=>"企画課 班長"],
+            ["id"=>2,"path"=>"employee02.png","dpt"=>"部品事業部","name"=>"宇田 広","sec"=>"製造課 製造係"],
+            ["id"=>3,"path"=>"employee03.png","dpt"=>"部品事業部","name"=>"奥地 尚人","sec"=>"製造課 製造係"],
+            ["id"=>4,"path"=>"employee04.png","dpt"=>"部品事業部","name"=>"小式海 拓人","sec"=>"管理課 管理係"],
+            ["id"=>5,"path"=>"employee05.png","dpt"=>"部品事業部","name"=>"村田 裕斗","sec"=>"製造課 技術部"]
+        ];
+
+        $recruitment = [
+            ["path"=>"icon01.png","title"=>"募集職種"],
+            ["path"=>"icon02.png","title"=>"募集要項"],
+            ["path"=>"icon03.png","title"=>"採用フロー"],
+            ["path"=>"icon04.png","title"=>"待遇・福利厚生"],
+            ["path"=>"icon05.png","title"=>"インターンシップ"],
+            ["path"=>"icon06.svg","title"=>"よくある質問"],
+            ["path"=>"icon07.png","title"=>"お問い合わせ"],
+
+        ];
+
+        return view("sansyu-original",compact("interviews","recruitment"));
     }
+
 }

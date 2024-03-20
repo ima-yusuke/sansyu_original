@@ -53,56 +53,18 @@
 
                 {{--インタビュー要素 (articleがそれぞれのインタビュー)--}}
                 <div class="flex flex-col gap-3">
-                    <a href="{{route("interview",1)}}" class="block w-full h-full">
-                        <article class="bg-interview_orange px-6 pt-16 pb-6 shadow-md">
-                            <img src="{{asset("img/employee01.png")}}" class="w-employee_width h-employee_height object-cover" alt="image">
-                            <p class="bg-dpt_bg text-center text-white font-medium text-xl py-3">型枠事業部</p>
-                            <div class="flex flex-col gap-3 pl-6 pt-3">
-                                <p class="font-semibold text-xl">鈴木 和弘</p>
-                                <p class="text-xl">企画課 班長</p>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="{{route("interview",2)}}" class="block w-full h-full">
-                        <article class="bg-interview_orange px-6 pt-16 pb-6 shadow-md">
-                            <img src="{{asset("img/employee02.png")}}" class="w-employee_width h-employee_height object-cover" alt="image">
-                            <p class="bg-dpt_bg text-center text-white font-medium text-xl py-3">部品事業部</p>
-                            <div class="flex flex-col gap-3 pl-6 pt-3">
-                                <p class="font-semibold text-xl">宇田 広</p>
-                                <p class="text-xl">製造課 製造係</p>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="{{route("interview",3)}}" class="block w-full h-full">
-                        <article class="bg-interview_orange px-6 pt-16 pb-6 shadow-md">
-                            <img src="{{asset("img/employee03.png")}}" class="w-employee_width h-employee_height object-cover" alt="image">
-                            <p class="bg-dpt_bg text-center text-white font-medium text-xl py-3">部品事業部</p>
-                            <div class="flex flex-col gap-3 pl-6 pt-3">
-                                <p class="font-semibold text-xl">奥地 尚人</p>
-                                <p class="text-xl">製造課 製造係</p>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="{{route("interview",4)}}" class="block w-full h-full">
-                        <article class="bg-interview_orange px-6 pt-16 pb-6 shadow-md">
-                            <img src="{{asset("img/employee04.png")}}" class="w-employee_width h-employee_height object-cover" alt="image">
-                            <p class="bg-dpt_bg text-center text-white font-medium text-xl py-3">部品事業部</p>
-                            <div class="flex flex-col gap-3 pl-6 pt-3">
-                                <p class="font-semibold text-xl">小式海 拓人</p>
-                                <p class="text-xl">管理課 管理係</p>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="{{route("interview",5)}}" class="block w-full h-full">
-                        <article class="bg-interview_orange px-6 pt-16 pb-6 shadow-md">
-                            <img src="{{asset("img/employee05.png")}}" class="w-employee_width h-employee_height object-cover" alt="image">
-                            <p class="bg-dpt_bg text-center text-white font-medium text-xl py-3">部品事業部</p>
-                            <div class="flex flex-col gap-3 pl-6 pt-3">
-                                <p class="font-semibold text-xl">村田 裕斗</p>
-                                <p class="text-xl">製造課 技術部</p>
-                            </div>
-                        </article>
-                    </a>
+                    @foreach($interviews as $value)
+                        <a href="{{route("interview",$value["id"])}}" class="block w-full h-full">
+                            <article class="bg-interview_orange px-6 pt-16 pb-6 shadow-md">
+                                <img src="{{asset('img/'.$value["path"])}}" class="w-employee_width h-employee_height object-cover" alt="image">
+                                <p class="bg-dpt_bg text-center text-white font-medium text-xl py-3">{{$value["dpt"]}}</p>
+                                <div class="flex flex-col gap-3 pl-6 pt-3">
+                                    <p class="font-semibold text-xl">{{$value["name"]}}</p>
+                                    <p class="text-xl">{{$value["sec"]}}</p>
+                                </div>
+                            </article>
+                        </a>
+                    @endforeach
                 </div>
             </section>
         </div>
@@ -111,50 +73,16 @@
         <section class="bg-white flex flex-col items-center pt-12 pb-6 px-5 gap-2 rounded-md w-full">
             <h2 class="font-semibold text-xl text-center pb-8">採用情報</h2>
 
-            {{--インタビュー要素 (articleがそれぞれのインタビュー)--}}
-            <div class="flex flex-col gap-3 w-[80%]">
-                <a href="http://amisiki.com/" class="w-full block justify-end w-full h-full border-b border-solid border-sky-300">
-                    <article class="flex gap-4 w-full">
-                        <img src="{{asset("img/icon01.png")}}" class="w-12 h-12 object-cover" alt="image">
-                        <p class="text-center font-medium text-xl py-3">募集職種</p>
-                    </article>
-                </a>
-                <a href="http://amisiki.com/" class="w-full block justify-end w-full h-full border-b border-solid border-sky-300">
-                    <article class="flex gap-4 w-full">
-                        <img src="{{asset("img/icon02.png")}}" class="w-12 h-12 object-cover" alt="image">
-                        <p class="text-center font-medium text-xl py-3">募集要項</p>
-                    </article>
-                </a>
-                <a href="http://amisiki.com/" class="w-full block justify-end w-full h-full border-b border-solid border-sky-300">
-                    <article class="flex gap-4 w-full">
-                        <img src="{{asset("img/icon03.png")}}" class="w-12 h-12 object-cover" alt="image">
-                        <p class="text-center font-medium text-xl py-3">採用フロー</p>
-                    </article>
-                </a>
-                <a href="http://amisiki.com/" class="w-full block justify-end w-full h-full border-b border-solid border-sky-300">
-                    <article class="flex gap-4 w-full">
-                        <img src="{{asset("img/icon04.png")}}" class="w-12 h-12 object-cover" alt="image">
-                        <p class="text-center font-medium text-xl py-3">待遇・福利厚生</p>
-                    </article>
-                </a>
-                <a href="http://amisiki.com/" class="w-full block justify-end w-full h-full border-b border-solid border-sky-300">
-                    <article class="flex gap-4 w-full">
-                        <img src="{{asset("img/icon05.png")}}" class="w-12 h-12 object-cover" alt="image">
-                        <p class="text-center font-medium text-xl py-3">インターンシップ</p>
-                    </article>
-                </a>
-                <a href="http://amisiki.com/" class="w-full block justify-end w-full h-full border-b border-solid border-sky-300">
-                    <article class="flex gap-4 w-full">
-                        <img src="{{asset("img/icon06.svg")}}" class="w-12 h-12 object-cover" alt="image">
-                        <p class="text-center font-medium text-xl py-3">よくある質問</p>
-                    </article>
-                </a>
-                <a href="http://amisiki.com/" class="w-full block justify-end w-full h-full border-b border-solid border-sky-300">
-                    <article class="flex gap-4 w-full">
-                        <img src="{{asset("img/icon07.png")}}" class="w-12 h-12 object-cover" alt="image">
-                        <p class="text-center font-medium text-xl py-3">お問い合わせ</p>
-                    </article>
-                </a>
+            <div class="flex flex-col w-[80%]">
+
+                @foreach($recruitment as $value)
+                    <a href="http://amisiki.com/" class="w-full block h-full border-b border-solid border-sky-300">
+                        <article class="flex items-center py-2 gap-4 w-full">
+                            <img src="{{asset('img/'.$value["path"])}}" class="w-12 h-12 object-cover" alt="image">
+                            <p class="text-center font-medium text-xl py-3">{{$value["title"]}}</p>
+                        </article>
+                    </a>
+                @endforeach
             </div>
         </section>
     </main>
