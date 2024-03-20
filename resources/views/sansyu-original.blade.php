@@ -63,7 +63,7 @@
                             </div>
                         </article>
                     </a>
-                    <a href="http://amisiki.com/" class="block w-full h-full">
+                    <a href="{{route("interview",2)}}" class="block w-full h-full">
                         <article class="bg-interview_orange px-6 pt-16 pb-6 shadow-md">
                             <img src="{{asset("img/employee02.png")}}" class="w-employee_width h-employee_height object-cover" alt="image">
                             <p class="bg-dpt_bg text-center text-white font-medium text-xl py-3">部品事業部</p>
@@ -73,7 +73,7 @@
                             </div>
                         </article>
                     </a>
-                    <a href="http://amisiki.com/" class="block w-full h-full">
+                    <a href="{{route("interview",3)}}" class="block w-full h-full">
                         <article class="bg-interview_orange px-6 pt-16 pb-6 shadow-md">
                             <img src="{{asset("img/employee03.png")}}" class="w-employee_width h-employee_height object-cover" alt="image">
                             <p class="bg-dpt_bg text-center text-white font-medium text-xl py-3">部品事業部</p>
@@ -83,7 +83,7 @@
                             </div>
                         </article>
                     </a>
-                    <a href="http://amisiki.com/" class="block w-full h-full">
+                    <a href="{{route("interview",4)}}" class="block w-full h-full">
                         <article class="bg-interview_orange px-6 pt-16 pb-6 shadow-md">
                             <img src="{{asset("img/employee04.png")}}" class="w-employee_width h-employee_height object-cover" alt="image">
                             <p class="bg-dpt_bg text-center text-white font-medium text-xl py-3">部品事業部</p>
@@ -93,7 +93,7 @@
                             </div>
                         </article>
                     </a>
-                    <a href="http://amisiki.com/" class="block w-full h-full">
+                    <a href="{{route("interview",5)}}" class="block w-full h-full">
                         <article class="bg-interview_orange px-6 pt-16 pb-6 shadow-md">
                             <img src="{{asset("img/employee05.png")}}" class="w-employee_width h-employee_height object-cover" alt="image">
                             <p class="bg-dpt_bg text-center text-white font-medium text-xl py-3">部品事業部</p>

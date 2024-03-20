@@ -9,6 +9,8 @@ Route::get('/', function () {
 });
 
 Route::get("/interview{id}",[\App\Http\Controllers\interview::class,"show_interview"])->name("interview");
+Route::get("/",[\App\Http\Controllers\interview::class,"back_home"])->name("back_home");
+
 
 
 Route::get('/dashboard', function () {

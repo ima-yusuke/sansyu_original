@@ -22,7 +22,10 @@ export default {
                 "main_blue":"#0832C9",
                 "main_bg":"#BEFFFA",
                 "interview_orange":"#FFDCB4",
+                "interview_blue":"#1BC6FC",
+                "interview_gray":"#626262",
                 "dpt_bg":"#FE9820",
+
             },
             spacing: {
                 "main_x":"460px",
@@ -31,7 +34,8 @@ export default {
                 "employee_width":"300px"
             },
             height:{
-                "employee_height":"300px"
+                "employee_height":"300px",
+                "modalYoutube":"360px",
             }
         },
     },
