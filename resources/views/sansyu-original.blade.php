@@ -76,7 +76,7 @@
             <div class="flex flex-col w-[80%]">
 
                 @foreach($recruitment as $value)
-                    <a href="http://amisiki.com/" class="w-full block h-full border-b border-solid border-sky-300">
+                    <a href="{{$value['url']!=null?route($value['url']):$value["link"]}}" class="w-full block h-full border-b border-solid border-sky-300">
                         <article class="flex items-center py-2 gap-4 w-full">
                             <img src="{{asset('img/'.$value["path"])}}" class="w-12 h-12 object-cover" alt="image">
                             <p class="text-center font-medium text-xl py-3">{{$value["title"]}}</p>

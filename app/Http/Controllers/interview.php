@@ -103,17 +103,18 @@ class interview extends Controller
         ];
 
         $recruitment = [
-            ["path"=>"icon01.png","title"=>"募集職種"],
-            ["path"=>"icon02.png","title"=>"募集要項"],
-            ["path"=>"icon03.png","title"=>"採用フロー"],
-            ["path"=>"icon04.png","title"=>"待遇・福利厚生"],
-            ["path"=>"icon05.png","title"=>"インターンシップ"],
-            ["path"=>"icon06.svg","title"=>"よくある質問"],
-            ["path"=>"icon07.png","title"=>"お問い合わせ"],
+            ["path"=>"icon01.png","title"=>"募集職種","url"=>"show_job_opening"],
+            ["path"=>"icon02.png","title"=>"募集要項","url"=>"show_job_detail"],
+            ["path"=>"icon03.png","title"=>"採用フロー","url"=>"show_job_flow"],
+            ["path"=>"icon04.png","title"=>"待遇・福利厚生","url"=>"show_job_benefit"],
+            ["path"=>"icon05.png","title"=>"インターンシップ","url"=>"show_job_internship"],
+            ["path"=>"icon06.svg","title"=>"よくある質問","url"=>"show_job_question"],
+            ["path"=>"icon07.png","title"=>"お問い合わせ","url"=>null,"link"=>"https://sansyu-jp.com/contact"],
 
         ];
 
         return view("sansyu-original",compact("interviews","recruitment"));
     }
+
 
 }
