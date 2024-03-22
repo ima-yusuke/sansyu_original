@@ -1,4 +1,47 @@
 <x-layout title="三秀">
+
+    <!-- drawer component -->
+    <div class="side_wrapper">
+        <div class="side_menu_off">
+            <h5 class="text-base font-semibold text-gray-500">メニュー</h5>
+            <button type="button" class="side_li text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Close menu</span>
+            </button>
+
+            <div class="py-4 overflow-y-auto">
+                <ul class="space-y-2 font-medium">
+                    <li class="side_li">
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                            <span class="ms-3">会社紹介</span>
+                        </a>
+                    </li>
+                    <li class="side_li">
+                        <a href="#message" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                            <span class="ms-3">社長メッセージ</span>
+                        </a>
+                    </li>
+                    <li class="side_li">
+                        <a href="#product" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                            <span class="ms-3">製品紹介</span>
+                        </a>
+                    </li>
+                    <li class="side_li">
+                        <a href="#interview" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                            <span class="ms-3">社員インタビュー</span>
+                        </a>
+                    </li>
+                    <li class="side_li">
+                        <a href="#reqruitment" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                            <span class="ms-3">採用窓口</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
     {{--ヘッダー--}}
     <x-header></x-header>
 
@@ -14,7 +57,7 @@
         <div class="bg-main_bg w-[88%] px-8 py-12 flex flex-col gap-8">
 
             {{--first section--}}
-            <section class="bg-white flex flex-col items-center py-12 px-5 gap-2 rounded-md">
+            <section id="message" class="bg-white flex flex-col items-center py-12 px-5 gap-2 rounded-md">
                 <h2 class="font-semibold text-xl text-center">メッセージ</h2>
                 <p class="text-main_blue font-semibold text-xl text-center">弊社のモットーは「即行動」！<br>前向きな人を求めています</p>
                 <img src="{{asset("img/president.png")}}" class="object-cover rounded-md" alt="image">
@@ -31,7 +74,7 @@
             </section>
 
             {{--second section--}}
-            <section class="bg-white flex flex-col items-center py-12 px-5 gap-2 rounded-md">
+            <section id="product" class="bg-white flex flex-col items-center py-12 px-5 gap-2 rounded-md">
                 <h2 class="font-semibold text-xl text-center">Column</h2>
                 <p class="text-main_blue font-semibold text-xl text-center">ホームページを飾るイラスト</p>
                 <img src="{{asset("img/column.png")}}" class="object-cover rounded-md" alt="image">
@@ -48,7 +91,7 @@
             </section>
 
             {{--third section--}}
-            <section class="bg-white flex flex-col items-center pt-12 pb-6 px-5 gap-2 rounded-md">
+            <section id="interview" class="bg-white flex flex-col items-center pt-12 pb-6 px-5 gap-2 rounded-md">
                 <h2 class="font-semibold text-xl text-center pb-8">社員インタビュー</h2>
 
                 {{--インタビュー要素 (articleがそれぞれのインタビュー)--}}
@@ -70,7 +113,7 @@
         </div>
 
         {{--採用情報 section--}}
-        <section class="bg-white flex flex-col items-center pt-12 pb-6 px-5 gap-2 rounded-md w-full">
+        <section id="reqruitment" class="bg-white flex flex-col items-center pt-12 pb-6 px-5 gap-2 rounded-md w-full">
             <h2 class="font-semibold text-xl text-center pb-8">採用情報</h2>
 
             <div class="flex flex-col w-[80%]">
@@ -88,4 +131,7 @@
     </main>
 
     <x-footer></x-footer>
+
+    <div class="screen_cover"></div>
+
 </x-layout>

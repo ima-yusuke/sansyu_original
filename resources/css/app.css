@@ -6,4 +6,36 @@ button:hover{
     cursor: pointer;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
+.popup-bg-cover{
+    position: fixed; /* ブラウザの定位置に固定 */
+    background: rgba(0, 0, 0, .5); /* 背景色を半透明の黒色に */
+    width: 100%; /* 要素の横幅を画面全体に */
+    height: 100%; /* 要素の高さを画面全体に */
+    top: 0; /* 要素の固定位置をブラウザ最上部に合わせる */
+    left: 0; /* 要素の固定位置をブラウザ左側に合わせる */
+    z-index: 50; /* 要素をコンテンツより前面に（要調整） */
+}
+
+.side_menu_off{
+    position: absolute;
+    left: -1000px;
+    z-index: 100;
+}
+
+.side_menu_show{
+    background:white;
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.scroll_none{
+    overflow: hidden;
+}
