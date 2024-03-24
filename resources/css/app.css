@@ -20,20 +20,51 @@ html{
     z-index: 50; /* 要素をコンテンツより前面に（要調整） */
 }
 
+@media screen {
+
+}
 .side_menu_off{
-    position: absolute;
-    left: -1000px;
+    background:white;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    transition-duration: 0.6s;
     z-index: 100;
+}@media screen and (min-width:600px){
+    .side_menu_off {
+        background: white;
+        width: 350px;
+        height: 100%;
+        position: fixed;
+        left: -350px;
+        top: 0;
+        transition-duration: 0.6s;
+        z-index: 100;
+    }
 }
 
 .side_menu_show{
     background:white;
-    width: 350px;
+    width: 250px;
     height: 100%;
     position: fixed;
     left: 0;
     top: 0;
+    transition-duration: 0.6s;
     z-index: 100;
+}@media screen and (min-width:600px){
+    .side_menu_show {
+        background: white;
+        width: 350px;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        transition-duration: 0.6s;
+        z-index: 100;
+    }
 }
 
 .scroll_none{

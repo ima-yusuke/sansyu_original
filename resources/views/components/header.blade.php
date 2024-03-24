@@ -1,6 +1,6 @@
-<header class="w-full p-8 fixed bg-white bg-opacity-75 backdrop-blur-[0.1px] z-30">
+<header class="w-full md:p-8 p-4 fixed bg-white bg-opacity-75 backdrop-blur-[0.1px] z-30">
     {{--header top--}}
-    <div class="flex justify-between px-48">
+    <div class="flex justify-between md:px-48">
         <div>
             <i  class="hamburger fa-solid fa-bars px-4 py-2.5 border border-solid border-gray-300 rounded-md hover:bg-sky-100 hover:cursor-pointer"></i>
         </div>

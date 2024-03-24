@@ -1,5 +1,5 @@
 <x-layout title="インタビュー">
-    <div class="flex flex-col items-center gap-4 px-main_x pt-16 pb-32">
+    <div class="flex flex-col items-center gap-4 md:px-main_x px-4 pt-16 pb-32">
         {{--オレンジパート--}}
         <section class="w-full">
             <h2 class="bg-dpt_bg text-white font-semibold text-xl py-4 px-8 rounded-md">{{$selected_emp["dpt-sec"]}}</h2>
@@ -20,8 +20,8 @@
                     <p class="text-interview_gray px-4 pt-2">{{$value}}</p>
                 </section>
             @endforeach
-                <div class="w-full flex justify-center">
-                    <iframe class="w-full h-modalYoutube" src="{{$selected_emp["youtube"]}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="w-full flex justify-center px-4 md:px-0">
+                    <iframe class="w-full md:h-modalYoutube h-48" src="{{$selected_emp["youtube"]}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
         </div>
         <p  class="ml-auto text-xl px-4">→ <a onclick="history.back()" class="hover:underline">戻る</a></p>

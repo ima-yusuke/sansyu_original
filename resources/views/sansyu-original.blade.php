@@ -2,8 +2,8 @@
 
     <!-- drawer component -->
     <div class="side_wrapper">
-        <div class="side_menu_off">
-            <h5 class="text-base font-semibold text-gray-500">メニュー</h5>
+        <div class="side_menu_off pt-4">
+            <h5 class="text-base font-semibold text-gray-500 px-5">メニュー</h5>
             <button type="button" class="side_li text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
                 <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 <span class="sr-only">Close menu</span>
@@ -46,15 +46,15 @@
     <x-header></x-header>
 
     {{--メイン--}}
-    <main class="flex flex-col items-center gap-4 px-main_x pt-44">
-        <div class="flex flex-col items-center">
+    <main class="flex flex-col items-center gap-4 md:px-main_x md:pt-44">
+        <div class="flex flex-col items-center pt-36 md:pt-0">
             <img src="{{asset("img/sansyu-top.jpg")}}" class="object-cover pb-4" alt="image">
             <p class="text-main_blue text-center text-3xl font-semibold">1年目から企画提案<br>新規事業の中心メンバーに！</p>
             <p class="font-semibold text-xl">やりたいこと、どんどん言える<br>三秀で自分の可能性を試そう！</p>
         </div>
 
         {{--背景ブルーパート--}}
-        <div class="bg-main_bg w-[88%] px-8 py-12 flex flex-col gap-8">
+        <div class="bg-main_bg md:w-[88%] w-full px-4 md:px-8 py-12 flex flex-col gap-8">
 
             {{--first section--}}
             <section id="message" class="bg-white flex flex-col items-center py-12 px-5 gap-2 rounded-md">
@@ -68,8 +68,8 @@
                 <p>
                     採用に際しては、ひとつでも得意なことがある人に惹かれます。 何かを頑張っている強い想いは、会社の成長に繋がりますから。弊社の新しい柱をたてるために、社員のみなさんから色々な意見を提案してもらっています。 新しいことは不安を伴いますが、一歩を踏み出すことが楽しめるような方が欲しいですね。 弊社はこれから色々なことにチャレンジしていきます。例えば最近では、人材育成や管理・派遣などもスタートし、キャンプ用品の自社製品をはじめ、色々なことに挑戦しています。積極的に意見を出せる人を募集していますので、よろしくお願いいたします。
                 </p>
-                <div>
-                    <iframe width="348" height="258" src="https://www.youtube.com/embed/XI9MvnfwbbA?si=y65NVNuwXv86t42-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="w-full">
+                    <iframe width="348" class="w-full" height="258" src="https://www.youtube.com/embed/XI9MvnfwbbA?si=y65NVNuwXv86t42-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </section>
 
