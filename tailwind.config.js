@@ -31,7 +31,8 @@ export default {
                 "main_x":"460px",
             },
             width:{
-                "employee_width":"300px"
+                "employee_width":"300px",
+                "450":"450px"
             },
             height:{
                 "employee_height":"300px",

@@ -1,5 +1,5 @@
 <x-layout title="インタビュー">
-    <div class="flex flex-col items-center gap-4 md:px-main_x px-4 pt-16 pb-32">
+    <div class="flex flex-col items-center gap-4 md:px-main_x 2xl:px-[36%] px-4 pt-16 pb-32">
         {{--オレンジパート--}}
         <section class="w-full">
             <h2 class="bg-dpt_bg text-white font-semibold text-xl py-4 px-8 rounded-md">{{$selected_emp["dpt-sec"]}}</h2>
