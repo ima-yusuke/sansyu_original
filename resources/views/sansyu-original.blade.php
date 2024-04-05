@@ -46,8 +46,8 @@
     <x-header></x-header>
 
     {{--メイン--}}
-    <main class="flex flex-col items-center gap-4 md:px-main_x md:pt-44 2xl:px-[36%]">
-        <div class="flex flex-col items-center pt-36 md:pt-0">
+    <main class="flex flex-col items-center gap-4 w-full max-w-[520px] m-auto">
+        <div class="flex flex-col items-center pt-36 xl:pt-48 md:pt-0">
             <img src="{{asset("img/sansyu-top.jpg")}}" class="object-cover pb-4" alt="image">
             <p class="text-main_blue text-center text-3xl font-semibold">1年目から企画提案<br>新規事業の中心メンバーに！</p>
             <p class="font-semibold text-xl">やりたいこと、どんどん言える<br>三秀で自分の可能性を試そう！</p>

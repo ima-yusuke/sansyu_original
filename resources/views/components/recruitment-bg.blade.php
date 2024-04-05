@@ -1,4 +1,4 @@
-<div class="md:mx-main_x 2xl:mx-[36%] bg-main_bg min-h-full h-auto">
+<div class="w-full max-w-[520px] m-auto bg-main_bg min-h-full h-auto">
     <h2 class="text-center text-2xl font-medium pt-16">【{{$title}}】</h2>
     <section class="flex flex-col gap-1 pb-4">
         {{$slot}}
