@@ -5,3 +5,4 @@
     </section>
     <p  class="flex justify-end text-xl pb-4 px-4">→ <a onclick="history.back()" class="hover:underline">戻る</a></p>
 </div>
+

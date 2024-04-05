@@ -55,7 +55,7 @@
             </article>
 
             <article class="relative bg-gray-300 p-6 rounded-lg shadow-md w-64 ml-auto mr-8">
-                <p class="text-red-600">自家用車での通勤は可能ですか？</p>
+                <p>社内にスポーツチームはありますか？</p>
                 <div class="absolute top-1/4 right-0 w-0 h-0 mr-3 transform -translate-y-1/2">
                     <div class="w-5 h-5 bg-gray-300 transform rotate-45"></div>
                 </div>
